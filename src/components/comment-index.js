@@ -3,19 +3,21 @@ import CommentForm from './comment-form'
 import CommentDisplay from './comment-display'
 
 export default class CommentIndex extends Component {
+  
   state = {
-   commentData: {
+    commentData: {
     name : null,
     title: null,
     comment: null
-   }
+    }
   }
- onFormSubmit = (commentData) => {
-   this.setState({
-   commentData
+
+  onFormSubmit = (commentData) => {
+    this.setState({
+    commentData
   })
- }
- 
+  }
+
  render () {
     return ( 
     <div>    

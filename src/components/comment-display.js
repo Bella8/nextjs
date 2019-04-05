@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const CommentDisplay = ({ commentData }) => (
   commentData.name ? (
@@ -7,7 +7,7 @@ const CommentDisplay = ({ commentData }) => (
       <h4>{commentData.title}</h4>
       <p>{commentData.comment}</p>
     </div>
-  ): null
+  ) : null
 )
 
 export default CommentDisplay

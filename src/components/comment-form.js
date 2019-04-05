@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import "../../static/comment-form.css";
 
 export default class CommentForm extends Component {
   state = {
@@ -36,8 +35,8 @@ export default class CommentForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
-      <ul class="flex-outer">
+      <form className="ui form" onSubmit={this.onFormSubmit}>
+        <ul style={{ listStyleType: "none" }}>
       <li>
         <label>Name: </label>
         <input 
@@ -54,7 +53,7 @@ export default class CommentForm extends Component {
       </li>
       <li>
         <label>Comment: </label>
-        <textArea
+        <textarea
           onChange={this.onChangeComent}
           value={this.state.comment}
         />
